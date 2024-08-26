@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'ecommerce-ui',
+      name: 'booster-ui',
       script: 'node_modules/.bin/next',
       args: 'start',
       instances: 1,

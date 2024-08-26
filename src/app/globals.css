@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -60,7 +59,6 @@
   }
 }
 
-
 /* CSS HSL */
 /* --white: hsla(0, 0%, 100%, 1);
 --crimson: hsla(353, 70%, 48%, 1);
@@ -98,7 +96,7 @@
   bottom: 0;
   left: 0px;
   width: 60%;
-  background: #d10024;
+  background: hsl(221.2, 83.2%, 53.3%);
   opacity: 0.9;
   z-index: 10;
   -webkit-transform: skewX(-45deg);
@@ -112,7 +110,7 @@
   bottom: 0;
   left: 1px;
   width: 100%;
-  background: #d10024;
+  background: hsl(221.2, 83.2%, 53.3%);
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);

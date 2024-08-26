@@ -1,6 +1,11 @@
+import { Metadata } from 'next';
 import { FC } from 'react';
 
 interface pageProps {}
+
+export const metadata: Metadata = {
+  title: `${process.env.NEXT_PUBLIC_COMPANY_NAME} - About Us`,
+};
 
 const page: FC<pageProps> = ({}) => {
   return (

@@ -164,7 +164,7 @@ export function DataTable<TData, TValue>({
         <div className="flex gap-3">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="destructive" className="ml-auto">
+              <Button variant="default" className="ml-auto">
                 Columns
               </Button>
             </DropdownMenuTrigger>

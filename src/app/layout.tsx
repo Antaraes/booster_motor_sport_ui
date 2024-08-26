@@ -8,7 +8,7 @@ import { Toaster } from 'react-hot-toast';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'E Commerce',
+  title: process.env.NEXT_PUBLIC_COMPANY_NAME,
   icons: {
     icon: '/favicon.png',
   },

@@ -46,19 +46,30 @@ const FeatureProductList: FC<FeatureProductListProps> = ({}) => {
           ))}
         </div>
       </div>
-
-      <Swiper
-        slidesPerView={isMobile ? 1.7 : 4.5}
-        spaceBetween={isMobile ? 5 : 30}
-        className="mySwiper my-5"
-      >
-        {!isProductsLoading &&
-          products?.data.map((product: any, index: number) => (
-            <SwiperSlide key={index}>
-              <ProductCard product={product} />
-            </SwiperSlide>
-          ))}
-      </Swiper>
+      {products?.data.length > 0 ? (
+        <Swiper
+          slidesPerView={isMobile ? 1.7 : 4.5}
+          spaceBetween={isMobile ? 5 : 30}
+          className="mySwiper my-5"
+        >
+          {!isProductsLoading &&
+            products?.data.map((product: any, index: number) => (
+              <SwiperSlide key={index}>
+                <ProductCard product={product} />
+              </SwiperSlide>
+            ))}
+        </Swiper>
+      ) : (
+        <div className="flex flex-col items-center justify-center text-center py-10">
+          <p className="text-2xl lg:text-3xl font-bold text-gray-700">
+            Coming Soon!
+          </p>
+          <p className="text-sm lg:text-base text-gray-500 mt-2">
+            We&apos;re working hard to bring you exciting features products.
+            Stay tuned!
+          </p>
+        </div>
+      )}
     </div>
   );
 };
