@@ -55,7 +55,7 @@ export const LoginService = ({ saveLogin }: { saveLogin: boolean }) => {
       }
       setCookie('user_ecommerce_token', data.data.data.access_token);
       await navigate.push('/');
-      toast.success('Signup successful');
+      toast.success(data.data.message);
     },
     onError: (error: any) => {
       toast.error(error.response.data.message);
