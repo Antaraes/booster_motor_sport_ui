@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'booster-ui',
       script: 'node_modules/.bin/next',
-      args: 'start',
+      args: 'start -p 4000',
       instances: 1,
       exec_mode: 'cluster',
       env: {
